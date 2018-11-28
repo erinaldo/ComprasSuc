@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="TextBox28.OutputFormat" xml:space="preserve">
+    <value>##,##0.00</value>
+  </data>
+  <data name="TextBox30.OutputFormat" xml:space="preserve">
+    <value>##,##0.00</value>
+  </data>
+  <data name="TextBox31.OutputFormat" xml:space="preserve">
+    <value>##,##0.00</value>
+  </data>
+  <data name="txtPrecioCos.OutputFormat" xml:space="preserve">
+    <value>##,##0.00</value>
+  </data>
+  <data name="txtImporteCos.OutputFormat" xml:space="preserve">
+    <value>##,##0.00</value>
+  </data>
+  <data name="txtPrecioOrgEqui.OutputFormat" xml:space="preserve">
+    <value>##,##0.00</value>
+  </data>
+  <data name="txtImporteEqui.OutputFormat" xml:space="preserve">
+    <value>##,##0.00</value>
+  </data>
+  <data name="txtPrecioCosEqui.OutputFormat" xml:space="preserve">
+    <value>##,##0.00</value>
+  </data>
+  <data name="txtImporteCosEqui.OutputFormat" xml:space="preserve">
+    <value>##,##0.00</value>
+  </data>
+  <data name="TextBox23.OutputFormat" xml:space="preserve">
+    <value>dd/MM/yyyy</value>
+  </data>
+  <data name="TextBox24.OutputFormat" xml:space="preserve">
+    <value>##,##0.00</value>
+  </data>
+  <data name="txtTotalCompraCos.OutputFormat" xml:space="preserve">
+    <value>##,##0.00</value>
+  </data>
+  <data name="txtTotalCompraCosEqui.OutputFormat" xml:space="preserve">
+    <value>##,##0.00</value>
+  </data>
+  <data name="txtTotalCompra.OutputFormat" xml:space="preserve">
+    <value>##,##0.00</value>
+  </data>
+  <data name="txtTotalCompraEqui.OutputFormat" xml:space="preserve">
+    <value>##,##0.00</value>
+  </data>
+  <data name="txtMontoRec.OutputFormat" xml:space="preserve">
+    <value>##,##0.00</value>
+  </data>
+  <data name="txtMontoDes.OutputFormat" xml:space="preserve">
+    <value>##,##0.00</value>
+  </data>
+  <data name="txtMontoAnt.OutputFormat" xml:space="preserve">
+    <value>##,##0.00</value>
+  </data>
+  <data name="txtFacturaMonto.OutputFormat" xml:space="preserve">
+    <value>##,##0.00</value>
+  </data>
+  <metadata name="$this.TrayLargeIcon" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="OleDBDataSource1.SQL" xml:space="preserve">
+    <value>SELECT      comCompra.CompraId,      comCompra.EmpresaId,      comCompra.CompraNro,      comCompra.Fecha,      comTipoPago.TipoPagoId,      comTipoPago.TipoPagoDes,      invAlmacen.AlmacenId,      invAlmacen.AlmacenDes,      comProveedor.ProveedorId,      comProveedor.ProveedorDes,      comCompra.CompraDes,      comCompra.CompraObs,      tblMoneda.MonedaId,      tblMoneda.MonedaDes,      comCompra.TipoCambio,      comCompra.MontoOrg,      comCompra.MontoAnt,      comCompra.MontoDes,      comCompra.MontoRec,      comCompra.MontoOtro,      comCompra.MontoNet,      comCompra.MontoLiq,      comCompra.FacturaId,      comCompra.PolizaId,      comPedCompra.PedCompraId,      comPedCompra.PedCompraNro,      comCredito.CreditoId,      comCredito.CreditoNro,      invTipoNota.TipoNotaId,      invTipoNota.TipoNotaDes,      comCompra.NotaNro,      tblTipoComp.TipoCompId,      tblTipoComp.TipoCompDes,      comCompra.CompNro,      tblEstado.EstadoId,      tblEstado.EstadoDes,      comCompraDet.CompraDetId,      invItem.ItemId,      invItem.ItemCod,      invItem.ItemDes,      invMedida.MedidaId,      invMedida.MedidaDes,      comCompraDet.Cantidad,      comCompraDet.PrecioOrg,      comCompraDet.PrecioCos,      comCompraDet.Importe   FROM comCompra, invAlmacen, comProveedor, comTipoPago, tblMoneda, comPedCompra, comCredito, invTipoNota, tblTipoComp, tblEstado, comCompraDet, invItem, invMedida  WHERE  comCompra.EmpresaId = 1 AND  comCompra.CompraId = 301 AND  comCompra.AlmacenId = invAlmacen.AlmacenId  AND  comCompra.ProveedorId = comProveedor.ProveedorId  AND  comCompra.TipoPagoId = comTipoPago.TipoPagoId  AND  comCompra.MonedaId = tblMoneda.MonedaId  AND  comCompra.PedCompraId = comPedCompra.PedCompraId  AND  comCompra.CreditoId = comCredito.CreditoId  AND  comCompra.TipoNotaId = invTipoNota.TipoNotaId  AND  comCompra.TipoCompId = tblTipoComp.TipoCompId  AND  comCompra.EstadoId = tblEstado.EstadoId  AND  comCompra.CompraId = comCompraDet.CompraId  AND  comCompraDet.ItemId = invItem.ItemId  AND  comCompraDet.MedidaId = invMedida.MedidaId</value>
+  </data>
+  <data name="$this.StyleSheet" xml:space="preserve">
+    <value>font-family: Arial; font-style: normal; font-variant: inherit; font-weight: normal; font-size: 10pt; font-size-adjust: inherit; font-stretch: inherit; color: rgb(0,0,0); background-repeat: inherit; background-attachment: inherit; opacity: inherit; word-spacing: inherit; letter-spacing: inherit; text-decoration: none; vertical-align: inherit; text-transform: inherit; text-align: inherit; text-indent: inherit; unicode-bidi: inherit; line-height: inherit; white-space: inherit; ddo-char-set: 0; </value>
+  </data>
+</root>
