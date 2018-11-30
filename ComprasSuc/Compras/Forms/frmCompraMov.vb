@@ -819,8 +819,15 @@ Public Class frmCompraMov
             oRow("Cantidad") = oDataRow("Cantidad") * oDataRow("MedidaItemCantEqui")
             If oDataRow("PrecioOrg") <> 0 Then oRow("PrecioOrg") = oDataRow("PrecioOrg") / oDataRow("MedidaItemCantEqui")
             If oDataRow("PrecioCos") <> 0 Then oRow("PrecioCos") = oDataRow("PrecioCos") / oDataRow("MedidaItemCantEqui")
-            If oDataRow("Importe") <> 0 Then oRow("ImporteOrg") = oDataRow("Importe") / oDataRow("MedidaItemCantEqui")
-            If oDataRow("ImporteCos") <> 0 Then oRow("ImporteCos") = oDataRow("ImporteCos") / oDataRow("MedidaItemCantEqui")
+
+            ''Carlos: error reportado por Andres, el importe no era el correcto(precio * cantidad),cuando el reporte era por medida Minima
+            'If oDataRow("Importe") <> 0 Then oRow("ImporteOrg") = oDataRow("Importe") / oDataRow("MedidaItemCantEqui")
+            If oDataRow("Importe") <> 0 Then oRow("ImporteOrg") = oRow("Cantidad") * oRow("PrecioOrg")
+
+
+            'If oDataRow("ImporteCos") <> 0 Then oRow("ImporteCos") = oDataRow("ImporteCos") / oDataRow("MedidaItemCantEqui")
+            If oDataRow("ImporteCos") <> 0 Then oRow("ImporteCos") = oRow("Cantidad") * oRow("PrecioCos")
+
          End If
       ElseIf mlngMedidaId = 2 Then 'Medida Equivalente del Reporte
          If oDataRow("MedidaId") = oDataRow("MedidaItemEquiId") Then
@@ -835,8 +842,14 @@ Public Class frmCompraMov
             If oDataRow("Cantidad") <> 0 Then oRow("Cantidad") = oDataRow("Cantidad") / oDataRow("MedidaItemCantEqui")
             oRow("PrecioOrg") = oDataRow("PrecioOrg") * oDataRow("MedidaItemCantEqui")
             oRow("PrecioCos") = oDataRow("PrecioCos") * oDataRow("MedidaItemCantEqui")
-            oRow("ImporteOrg") = oDataRow("Importe") * oDataRow("MedidaItemCantEqui")
-            oRow("ImporteCos") = oDataRow("ImporteCos") * oDataRow("MedidaItemCantEqui")
+
+            ''Carlos: error reportado por Andres, el importe no era el correcto(precio * cantidad),cuando el reporte era por medida Minima
+            'oRow("ImporteOrg") = oDataRow("Importe") * oDataRow("MedidaItemCantEqui")
+            oRow("ImporteOrg") = oRow("Cantidad") * oRow("PrecioOrg")
+
+            'oRow("ImporteCos") = oDataRow("ImporteCos") * oDataRow("MedidaItemCantEqui")
+            oRow("ImporteCos") = oRow("Cantidad") * oRow("PrecioCos")
+
          End If
       End If
 
@@ -871,8 +884,14 @@ Public Class frmCompraMov
             oDataRow("Cantidad") = oDataRow("Cantidad") * oDataRow("MedidaItemCantEqui")
             If oDataRow("PrecioOrg") <> 0 Then oDataRow("PrecioOrg") = oDataRow("PrecioOrg") / oDataRow("MedidaItemCantEqui")
             If oDataRow("PrecioCos") <> 0 Then oDataRow("PrecioCos") = oDataRow("PrecioCos") / oDataRow("MedidaItemCantEqui")
-            If oDataRow("Importe") <> 0 Then oDataRow("Importe") = oDataRow("Importe") / oDataRow("MedidaItemCantEqui")
-            If oDataRow("ImporteCos") <> 0 Then oDataRow("ImporteCos") = oDataRow("ImporteCos") / oDataRow("MedidaItemCantEqui")
+
+            ''Carlos: error reportado por Andres, el importe no era el correcto(precio * cantidad),cuando el reporte era por medida Minima
+            'If oDataRow("Importe") <> 0 Then oDataRow("Importe") = oDataRow("Importe") / oDataRow("MedidaItemCantEqui")
+            If oDataRow("Importe") <> 0 Then oDataRow("Importe") = oDataRow("Cantidad") * oDataRow("PrecioOrg")
+
+            'If oDataRow("ImporteCos") <> 0 Then oDataRow("ImporteCos") = oDataRow("ImporteCos") / oDataRow("MedidaItemCantEqui")
+            If oDataRow("ImporteCos") <> 0 Then oDataRow("ImporteCos") = oDataRow("Cantidad") * oDataRow("PrecioCos")
+
          End If
 
       ElseIf mlngMedidaId = 2 Then 'Medida Equivalente del Reporte
@@ -880,8 +899,14 @@ Public Class frmCompraMov
             If oDataRow("Cantidad") <> 0 Then oDataRow("Cantidad") = oDataRow("Cantidad") / oDataRow("MedidaItemCantEqui")
             oDataRow("PrecioOrg") = oDataRow("PrecioOrg") * oDataRow("MedidaItemCantEqui")
             oDataRow("PrecioCos") = oDataRow("PrecioCos") * oDataRow("MedidaItemCantEqui")
-            oDataRow("Importe") = oDataRow("Importe") * oDataRow("MedidaItemCantEqui")
-            oDataRow("ImporteCos") = oDataRow("ImporteCos") * oDataRow("MedidaItemCantEqui")
+
+            ''Carlos: error reportado por Andres, el importe no era el correcto(precio * cantidad),cuando el reporte era por medida Minima
+            'oDataRow("Importe") = oDataRow("Importe") * oDataRow("MedidaItemCantEqui")
+            oDataRow("Importe") = oDataRow("Cantidad") * oDataRow("PrecioOrg")
+
+            'oDataRow("ImporteCos") = oDataRow("ImporteCos") * oDataRow("MedidaItemCantEqui")
+            oDataRow("ImporteCos") = oDataRow("Cantidad") * oDataRow("PrecioCos")
+
          End If
       End If
       oRow("Cantidad") = oRow("Cantidad") + oDataRow("Cantidad")
